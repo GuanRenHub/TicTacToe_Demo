@@ -80,7 +80,7 @@ namespace Game.Framework
             
             if (data.Type.Value != CheckerData.CheckerType.NONE)
             {
-                GLog.LogError("已有棋子，不可操作");
+                GLog.Log("已有棋子，不可操作");
                 return;
             }
 

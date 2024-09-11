@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{fda2741e-c04c-5b5e-f7c0-da2fe3bdab07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GR_Game_FrameWork", "GR_Game_FrameWork.csproj", "{c02f877c-a62c-b315-b5f2-6630db9e9efe}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{fda2741e-c04c-5b5e-f7c0-da2fe3bdab07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fda2741e-c04c-5b5e-f7c0-da2fe3bdab07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c02f877c-a62c-b315-b5f2-6630db9e9efe}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c02f877c-a62c-b315-b5f2-6630db9e9efe}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
