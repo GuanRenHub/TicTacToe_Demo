@@ -5,6 +5,7 @@
 // Job :
 #endregion
 
+using System.Collections;
 using System.Collections.Generic;
 using Game.Framework;
 using Game.UI;
@@ -63,11 +64,25 @@ namespace Game.GamePlay
         {
             if (IsAiRound)
             {
-                AIPlacingChecker(CheckerData.CheckerType.X);
+                StartCoroutine(DelayAIPlacingChecker(1f));
             }
         }
+
+        IEnumerator DelayAIPlacingChecker(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            AIPlacingChecker(CheckerData.CheckerType.X);
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            return GameApp.Interface;
+        }
         
-        // 简单处理AI
+        //------------ 以下是 简单处理AI
+
+        #region 简单处理AI
+
         private void AIPlacingChecker(CheckerData.CheckerType aiType)
         {
             // 尝试赢得游戏
@@ -154,10 +169,8 @@ namespace Game.GamePlay
             }
             return emptyPositions;
         }
-        
-        public IArchitecture GetArchitecture()
-        {
-            return GameApp.Interface;
-        }
+
+        #endregion
+
     }
 }

@@ -20,6 +20,12 @@ namespace Game.UI
         [SerializeField] 
         private RectTransform m_Container;
         
+        [Header("Round")]
+        [SerializeField] 
+        private GameObject m_RoundO;
+        [SerializeField] 
+        private GameObject m_RoundX;
+        
         private List<UIChecker> m_Checkers = new List<UIChecker>();
         
         // model
@@ -36,6 +42,8 @@ namespace Game.UI
         {
             m_CheckerBoardSystem.OnGameWin.AddListener(OnGameWin);
             m_CheckerBoardSystem.OnGameDraw.AddListener(OnGameDraw);
+            m_CheckerBoardSystem.CurRoundType.Register(OnRoundChange);
+            OnRoundChange(m_CheckerBoardSystem.CurRoundType);
             
             foreach (var checkerData in m_CheckerboardModel.GetCheckers())
             {
@@ -49,6 +57,7 @@ namespace Game.UI
         {
             m_CheckerBoardSystem.OnGameWin.RemoveListener(OnGameWin);
             m_CheckerBoardSystem.OnGameDraw.RemoveListener(OnGameDraw);
+            m_CheckerBoardSystem.CurRoundType.UnRegister(OnRoundChange);
         }
 
         public void PingResult()
@@ -103,6 +112,20 @@ namespace Game.UI
                     ClearPing();
                     TTTManager.Instance.Close();
                 });
+        }
+        
+        private void OnRoundChange(ECurRoundType obj)
+        {
+            if (obj == ECurRoundType.O)
+            {
+                m_RoundO.SetActive(true);
+                m_RoundX.SetActive(false);
+            }
+            else
+            {
+                m_RoundO.SetActive(false);
+                m_RoundX.SetActive(true);
+            }
         }
     }
 }
