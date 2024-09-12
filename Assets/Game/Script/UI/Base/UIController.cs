@@ -2,7 +2,7 @@
 // Name : UIController.cs
 // Author : GuanRen
 // CreateTime : 2024/09/09
-// Job : 棋盘
+// Job : ui基类
 #endregion
 
 using GameFramework;

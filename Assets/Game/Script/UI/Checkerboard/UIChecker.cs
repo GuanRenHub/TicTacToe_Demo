@@ -2,7 +2,7 @@
 // Name : UIChecker.cs
 // Author : GuanRen
 // CreateTime : 2024/09/09
-// Job :
+// Job : 棋盘格子与棋子
 #endregion
 
 using System;

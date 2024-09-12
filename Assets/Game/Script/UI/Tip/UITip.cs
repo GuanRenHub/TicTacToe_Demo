@@ -2,7 +2,7 @@
 // Name : UITip.cs
 // Author : GuanRen
 // CreateTime : 2024/09/10
-// Job :
+// Job : 提示UI
 #endregion
 
 using UnityEngine;

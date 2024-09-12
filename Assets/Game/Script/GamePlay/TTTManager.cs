@@ -2,7 +2,7 @@
 // Name : TTTManager.cs
 // Author : GuanRen
 // CreateTime : 2024/09/11
-// Job :
+// Job : 井字棋游戏主管理器
 #endregion
 
 using System.Collections;

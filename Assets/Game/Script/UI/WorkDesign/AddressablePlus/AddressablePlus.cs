@@ -2,7 +2,7 @@
 // Name : AddressablePlus.cs
 // Author : GuanRen
 // CreateTime : 2024/01/02
-// Job :
+// Job : AddressablePlus AA包封装
 #endregion
 
 using System;

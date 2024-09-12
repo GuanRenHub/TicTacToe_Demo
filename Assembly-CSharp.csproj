@@ -46,7 +46,6 @@
     <Compile Include="Assets\Game\Script\UI\Start\UIStartView.cs" />
     <Compile Include="Assets\Game\Script\GamePlay\TTTManager.cs" />
     <Compile Include="Assets\Game\Script\GameApp.cs" />
-    <Compile Include="Assets\Game\Script\GamePlay\TTTAI.cs" />
     <Compile Include="Assets\Game\Script\UI\UIRes.cs" />
     <Compile Include="Assets\Game\Script\GamePlay\GameSceneMain.cs" />
     <Compile Include="Assets\Game\Script\UI\WorkDesign\AddressablePlus\AddressablePlus.cs" />
